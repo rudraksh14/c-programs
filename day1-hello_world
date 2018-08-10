@@ -3,7 +3,8 @@ void display()
 {
         printf("hello world");
 }
-void main()
+int main()
 {
         display();
+        return 0;
 }
