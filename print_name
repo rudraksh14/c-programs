@@ -3,7 +3,8 @@ void display()
 {
         printf("RUDRAKSH BATRA");
 }
-void main()
+int main()
 {
         display();
+        return 0;
 }
