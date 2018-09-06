@@ -1,2 +1,13 @@
 //Write a function to add two float. (demo)
 #include<stdio.h>
+float add(float a,float b)
+{
+  float sum;
+  sum=a+b;
+  return sum;
+}
+void main()
+{
+  float result=add(5.90,6.56);
+  printf("the sum of 5.90 and 6.56 is :%f",result);
+}
