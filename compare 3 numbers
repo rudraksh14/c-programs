@@ -1,0 +1,52 @@
+// Write a function to compare 3 numbers and test it.
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int c;
+    int max;
+    int e;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter three number to compare:\n");
+    scanf("%d%d%d",&s.a,&s.b,&s.c);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b && s.a> s.c){
+        s.max=s.a;
+    }
+    else if(s.b>s.a && s.b>s.c){
+        s.max=s.b;
+    }
+    else if(s.c>s.a && s.c>s.b){
+        s.max = s.c;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if ( s.a == s.b && s.b == s.c)
+    {
+        printf("Every number is equal",s.a);
+    }
+    else
+    {
+        printf("%d is greater in all",s.max);
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+    return 0;
+}
