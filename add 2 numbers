@@ -1,10 +1,6 @@
 #include<stdio.h>
 struct add
 {
-    int a,b,c;
-};#include<stdio.h>
-struct add
-{
     float a,b,c;
 };
 void output(struct add k)
@@ -21,29 +17,6 @@ struct add input()
     struct add k;
     printf("enter the two numbers\n");
     scanf("%f%f",&k.a,&k.b);
-    return k;   
-}
-void main()
-{
-    struct add k;
-    k=input(); 
-    k=compute(k);
-    output(k);
-}
-void output(struct add k)
-{
-    printf("The sum is %d\n",k.c);
-}
-struct add compute(struct add k)
-{
-    k.c=k.a+k.b;
-    return k;
-}
-struct add input()
-{
-    struct add k;
-    printf("enter the two numbers\n");
-    scanf("%d%d",&k.a,&k.b);
     return k;   
 }
 void main()
