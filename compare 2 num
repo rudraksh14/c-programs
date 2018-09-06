@@ -1,0 +1,49 @@
+// Write a function to compare 2 numbers and test it.
+#include<stdio.h>
+struct sum
+{
+    int a;
+    int b;
+    int max;
+    int min;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two number to compare:\n");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b){
+    s.max=s.a;
+    s.min=s.b;
+    }
+    else if(s.a<s.b){
+    s.max=s.b;
+    s.min=s.a;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if(s.max!=s.min){
+    printf("%d is greater than %d\n",s.max,s.min);
+    }
+    else{
+        printf("Both numbers are equal\n");
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+    return 0;
+}
