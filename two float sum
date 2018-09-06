@@ -1,0 +1,29 @@
+// Write a program to get two float from the user and print the sum of the two float?
+#include<stdio.h>
+struct add
+{
+    float a,b,c;
+};
+void output(struct add k)
+{
+    printf("The sum is %f\n",k.c);
+}
+struct add compute(struct add k)
+{
+    k.c=k.a+k.b;
+    return k;
+}
+struct add input()
+{
+    struct add k;
+    printf("enter the two numbers\n");
+    scanf("%f%f",&k.a,&k.b);
+    return k;   
+}
+void main()
+{
+    struct add k;
+    k=input(); 
+    k=compute(k);
+    output(k);
+}
